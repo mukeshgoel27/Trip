@@ -1,0 +1,11 @@
+<!-- trip-line.component.html -->
+<div class="trip-line" [ngClass]="'level-' + trip.level">
+    <div class="start-point">{{ getStartAbbr() }}</div>
+    
+    <div class="line-container">
+      <div class="line" [ngClass]="{ 'continued': trip.isContinued }"></div>
+      <div class="arrow" *ngIf="!trip.isContinued">→</div>
+    </div>
+    
+    <div class="end-point">{{ getEndAbbr() }}</div>
+  </div>

@@ -1,0 +1,39 @@
+<!-- trip.component.html -->
+<div class="trip-container">
+    <h2>Trip Visualization</h2>
+    
+    <div class="input-container">
+      <div>
+        <label for="startPoint">Start Point:</label>
+        <input 
+          id="startPoint" 
+          [(ngModel)]="startPoint" 
+          placeholder="Enter start location"
+        >
+      </div>
+      
+      <div>
+        <label for="endPoint">End Point:</label>
+        <input 
+          id="endPoint" 
+          [(ngModel)]="endPoint" 
+          placeholder="Enter end location"
+        >
+      </div>
+      
+      <div class="button-group">
+        <button (click)="addTrip()">Add Trip</button>
+        <button (click)="clearAll()">Clear All</button>
+      </div>
+    </div>
+    
+    <div class="visualization-container">
+      <div class="trip-lines">
+        <app-trip-line 
+          *ngFor="let trip of tripService.trips$ | async; let i = index"
+          [trip]="trip" 
+          [index]="i"
+        ></app-trip-line>
+      </div>
+    </div>
+  </div>

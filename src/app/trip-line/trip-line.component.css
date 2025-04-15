@@ -1,0 +1,44 @@
+/* trip-line.component.css */
+.trip-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .start-point, .end-point {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .line-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: #333;
+  }
+  
+  .line.continued {
+    background-color: #666;
+  }
+  
+  .arrow {
+    margin-left: -10px;
+  }
+  
+  /* Level styles */
+  .trip-line.level-1 {
+    margin-left: 0;
+  }
+  
+  .trip-line.level-2 {
+    margin-left: 50px;
+  }

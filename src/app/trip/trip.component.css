@@ -1,0 +1,49 @@
+/* trip.component.css */
+.trip-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-container div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  
+  button {
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .visualization-container {
+    border: 1px solid #ddd;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .trip-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
